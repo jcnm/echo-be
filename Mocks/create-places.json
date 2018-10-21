@@ -1,0 +1,87 @@
+
+{
+    "places":[
+        {
+            "title": "Fleuriste Au Nom De La Rose Paris du Montparnasse",
+            "noun": "du Montparnasse",
+            "acl": {
+                "status": 2,
+                "visibility": 1,
+                "right" : 15
+            },
+            "kind": 9,
+            "number": 1 ,
+            "postalCode": "75006",
+            "coordinates": [ [48.8883749,2.1934229] ],
+            "afterNumber": ,
+            "uris": [ {"name": "website", "value": "aunomdelarose.fr"} ] ,
+            "phones": [ {"name": "Standard", "value": "0140560515"} ]
+        },
+        {
+            "title": "Place De La Concorde",
+            "noun": "de la Concorde",
+            "acl": {
+                "status": 2,
+                "visibility": 1,
+                "right" : 15
+            },
+            "kind": 4,
+            "number": 0 ,
+            "postalCode": "75008",
+            "coordinates": [ [48.8668416,2.3176921] ],
+            "afterNumber": ,
+            "uris": [ {"name": "website", "value": "paris.fr"} ]
+        },
+        {
+            "title": "Pavillon Gabriel",
+            "noun": "Gabriel",
+            "acl": {
+                "status": 2,
+                "visibility": 1,
+                "right" : 15
+            },
+            "kind": 8,
+            "number": 5 ,
+            "postalCode": "75008",
+            "coordinates": [ [48.8676683,2.3156893] ],
+            "afterNumber": ,
+            "uris": [ {"name": "website", "value": "poteletchabot.com"} ] ,
+            "phones": [ {"name": "Standard", "value": "01 42 68 18 18"} ] ,
+            "maintainers": [
+            {"name": "Webmaster", "value": "webmaster@bfm.org"}]
+        },
+        {
+            "title": "Palais Bourbon",
+            "noun": "de l'Université",
+            "acl": {
+                "status": 2,
+                "visibility": 1,
+                "right" : 15
+            },
+            "acronym": "BFM",
+            "kind": 1,
+            "number": 126 ,
+            "postalCode": "75007",
+            "coordinates": [ [48.8653126,2.3186306] ],
+            "afterNumber": ,
+            "uris": [ {"name": "website", "value": "assemblee-nationale.fr"} ] ,
+            "phones": [ {"name": "Standart", "value": "01 40 63 60 00"} ]
+        },
+        {
+            "title": "Hôpital Tenon AP-HP",
+            "noun": "de la Chine",
+            "acl": {
+                "status": 2,
+                "visibility": 1,
+                "right" : 15
+            },
+            "acronym": "Tenon",
+            "kind": 1,
+            "number": 4 ,
+            "postalCode": "75020",
+            "coordinates": [ [48.8697905,2.3933968] ],
+            "afterNumber": ,
+            "uris": [ {"name": "website", "value": "tenon-aphp.fr"} ] ,
+            "phones": [ {"name": "Standart", "value": "01 56 01 70 00"} ] 
+        }]
+}

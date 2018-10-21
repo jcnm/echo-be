@@ -2,9 +2,9 @@ import FluentSQLite
 import Vapor
 
 /// A single entry of a todo list.
-final class Todo: SQLiteModel {
+final class Todo: AdoptedModel {
     /// The unique identifier for this `Todo`.
-    var id: Int?
+    var id: Todo.ID?
 
     /// A title describing what this `Todo` entails.
     var title: String

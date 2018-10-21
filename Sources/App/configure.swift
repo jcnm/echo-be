@@ -10,7 +10,11 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
 
     // Register routes to the router
     let router = EngineRouter.default()
-    try routes(router)
+    if #available(OSX 10.12, *) {
+        try routes(router)
+    } else {
+        // Fallback on earlier versions
+    }
     services.register(router, as: Router.self)
 
     // Register middleware
@@ -21,7 +25,7 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
     services.register(middlewares)
 
     // Configure a SQLite database
-    let sqlite = try SQLiteDatabase(storage: .memory)
+    let sqlite = try SQLiteDatabase(storage: .file(path: "/Users/jcnm/Documents/dev/suu/echo/be/echo-data.sqlite"))
 
     // Register the configured SQLite database to the database config.
     var databases = DatabasesConfig()
@@ -31,9 +35,19 @@ public func configure(_ config: inout Config, _ env: inout Environment, _ servic
 
     /// Configure migrations
     var migrations = MigrationConfig()
-    migrations.add(model: User.self, database: .sqlite)
     migrations.add(model: UserToken.self, database: .sqlite)
-    migrations.add(model: Todo.self, database: .sqlite)
+    migrations.add(model: User.self, database: .sqlite)
+    migrations.add(model: Profile.self, database: .sqlite)
+    migrations.add(model: Place.self, database: .sqlite)
+    migrations.add(model: Echo.self, database: .sqlite)
+    migrations.add(model: Event.self, database: .sqlite)
+    migrations.add(model: Media.self, database: .sqlite)
+    migrations.add(model: Channel.self, database: .sqlite)
+    migrations.add(model: Ripple.self, database: .sqlite)
+    migrations.add(model: Witness.self, database: .sqlite)
+    migrations.add(model: Relation.self, database: .sqlite)
+    migrations.add(model: Position.self, database: .sqlite)
+//    migrations.add(model: Monitor.self, database: .sqlite)
     services.register(migrations)
 
 }

@@ -1,0 +1,43 @@
+{
+    "users":[
+        {
+            "login": "ndendem",
+            "givenName": "Mbaye",
+            "familyName": "Ndende" ,
+            "email": "ndendem@suu.io",
+            "password":  "ndendem@suu",
+            "verifyPassword":  "ndendem@suu"
+        },
+        {
+            "login": "jcnm",
+            "givenName": "JC",
+            "familyName": "NM" ,
+            "email": "jcnm@suu.io",
+            "password":  "jcnm@suu",
+            "verifyPassword":  "jcnm@suu"
+        },
+        {
+            "login": "Syl",
+            "givenName": "Sy",
+            "familyName": "Lorion" ,
+            "email": "syl@suu.io",
+            "password":  "syl@suu",
+            "verifyPassword":  "syl@suu"
+        },
+        {
+            "login": "sylorion",
+            "givenName": "Charles",
+            "familyName": "NJANDA" ,
+            "email": "jcnm@sylorion.com",
+            "password":  "jcnm@sylorion",
+            "verifyPassword":  "jcnm@sylorion"
+        },
+        {
+            "login": "track",
+            "givenName": "Dupont",
+            "familyName": "Guerrier" ,
+            "email": "dupontg@suu.io",
+            "password":  "dupontg@suu",
+            "verifyPassword":  "ndendem@suu"
+        }]
+}
